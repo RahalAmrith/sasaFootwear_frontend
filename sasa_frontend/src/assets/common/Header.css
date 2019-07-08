@@ -1,7 +1,7 @@
 .Head_main
 {
     height: 80px;
-    width: 100vw;
+    width: 100%;
     background-color: #1a1a1a;
 }
 
@@ -59,10 +59,10 @@
 .Head_navList li
 {
     color: #fff;
-    font-size: 25px;
+    font-size: 20px;
     display: inline-block;
     float: left;
-    padding: 5px 25px;
+    padding: 8px 25px;
     cursor: pointer;
     transition-duration: 0.3s;
 }

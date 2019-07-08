@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 import './App.css';
 
 // my Components
-import Header from './Components/common/header'
+import Header from './Components/common/header';
+import Home from './Components/home/home'
 
 
 class App extends Component {
@@ -12,6 +13,8 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
+        <Home />
+
         
       </div>
     );
