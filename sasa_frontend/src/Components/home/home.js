@@ -44,11 +44,13 @@ class Home extends Component {
         </div>
 
         <div className="home_features container">
-          <div className="col-sm-4">
+          <div className="col-sm-6 col-lg-3">
             <center>
               <div className="home_feature_box">
                 <center>
-                  <div className="iconImage" />
+                  <div className="iconImage">
+                    <i className="fas fa-crown" />
+                  </div>
                   <h3>SASA Elite</h3>
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
@@ -58,11 +60,13 @@ class Home extends Component {
               </div>
             </center>
           </div>
-          <div className="col-sm-4">
+          <div className="col-sm-6 col-lg-3">
             <center>
               <div className="home_feature_box">
                 <center>
-                  <div className="iconImage" />
+                  <div className="iconImage">
+                    <i className="fas fa-crown" />
+                  </div>
                   <h3>SASA Elite</h3>
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
@@ -72,11 +76,13 @@ class Home extends Component {
               </div>
             </center>
           </div>
-          <div className="col-sm-4">
+          <div className="col-sm-6 col-lg-3">
             <center>
               <div className="home_feature_box">
                 <center>
-                  <div className="iconImage" />
+                  <div className="iconImage">
+                    <i className="fas fa-crown" />
+                  </div>
                   <h3>SASA Elite</h3>
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
@@ -86,7 +92,22 @@ class Home extends Component {
               </div>
             </center>
           </div>
-          
+          <div className="col-sm-6 col-lg-3">
+            <center>
+              <div className="home_feature_box">
+                <center>
+                  <div className="iconImage">
+                    <i className="fas fa-crown" />
+                  </div>
+                  <h3>SASA Elite</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                </center>
+              </div>
+            </center>
+          </div>
         </div>
       </div>
     );

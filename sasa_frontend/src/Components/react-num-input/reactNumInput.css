@@ -1,0 +1,53 @@
+.rni_main
+{
+    height: 35px;
+    width: 120px;
+    border: solid 1px #d1d1d1;
+    padding: 0px 0px;
+    overflow: hidden;
+    border-radius: 2px;
+    display: block;
+    box-sizing: content-box;
+
+}
+
+.rni_main *
+{
+    /* transform: translateY(-2.5px) */
+}
+
+.rni_btn
+{
+    display: inline-block;
+    width: 30px;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #e6e6e6;
+    border: solid 0px ;
+    line-height: 100%;
+    outline: none;
+}
+
+.rni_input
+{
+    display: inline-block;
+    width: calc(100% - 60px);
+    height: 100%;
+    margin: 0px;
+    border: none;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 100%;
+}
+
+.rni_input::-webkit-inner-spin-button
+{
+    -webkit-appearance: none;
+}
+
+.rni_input:focus
+{
+    box-shadow: none;
+    outline: none;
+}
