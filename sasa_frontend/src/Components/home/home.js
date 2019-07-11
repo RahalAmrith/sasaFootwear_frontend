@@ -9,6 +9,9 @@ import banner01 from "../../images/Banners/001.jpg";
 import banner02 from "../../images/Banners/002.jpg";
 import banner03 from "../../images/Banners/003.jpg";
 
+// images for promotion
+import Pbanner01 from "../../images/promotionBanner/001.jpg";
+
 import "../../assets/home/home.css";
 
 // my Components
@@ -51,7 +54,7 @@ class Home extends Component {
                   <div className="iconImage">
                     <i className="fas fa-crown" />
                   </div>
-                  <h3>SASA Elite</h3>
+                  <h3>S Elite</h3>
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry.
@@ -65,9 +68,9 @@ class Home extends Component {
               <div className="home_feature_box">
                 <center>
                   <div className="iconImage">
-                    <i className="fas fa-crown" />
+                    <i className="fas fa-briefcase" />
                   </div>
-                  <h3>SASA Elite</h3>
+                  <h3>S Office</h3>
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry.
@@ -81,9 +84,9 @@ class Home extends Component {
               <div className="home_feature_box">
                 <center>
                   <div className="iconImage">
-                    <i className="fas fa-crown" />
+                    <i className="fas fa-home" />
                   </div>
-                  <h3>SASA Elite</h3>
+                  <h3>S Another</h3>
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry.
@@ -97,9 +100,9 @@ class Home extends Component {
               <div className="home_feature_box">
                 <center>
                   <div className="iconImage">
-                    <i className="fas fa-crown" />
+                    <i className="fas fa-umbrella-beach" />
                   </div>
-                  <h3>SASA Elite</h3>
+                  <h3>S Other</h3>
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry.
@@ -108,6 +111,17 @@ class Home extends Component {
               </div>
             </center>
           </div>
+        </div>
+      
+        <div className="home_promotion container">
+          <div
+            style={{ backgroundImage : "url('" + Pbanner01 + "')"}}
+            className="pBanner"
+          >
+
+          </div>
+
+
         </div>
       </div>
     );
