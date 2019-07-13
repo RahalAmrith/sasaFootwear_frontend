@@ -17,7 +17,17 @@ class Header extends Component {
         <div className="Head_nav">
           <div className="Head_logo" />
           <ul className="Head_navList">
-              <li>Products</li>
+              <li>
+                Products
+                <div className="head_dropdown">
+                  <ul>
+                    <li>S Elite</li>
+                    <li>S Office</li>
+                    <li>S Other</li>
+                    <li>S Another</li>
+                  </ul>
+                </div>
+              </li>
               <li>Shops</li>
               <li>Contact Us</li>
           </ul>

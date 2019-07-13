@@ -4,6 +4,9 @@ import React, { Component } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
+// new arrival Item
+import NewArrivalItem from "./NewArrivalItem";
+
 // images for banner
 import banner01 from "../../images/Banners/001.jpg";
 import banner02 from "../../images/Banners/002.jpg";
@@ -17,7 +20,67 @@ import "../../assets/home/home.css";
 // my Components
 
 class Home extends Component {
+  constructor() {
+    super();
+    this.state = {};
+
+    this.newArrivalList = [
+      {
+        img: "01",
+        name: "Shoe Name 01",
+        price: "1024.00",
+        stars: 5
+      },
+      {
+        img: "02",
+        name: "Shoe Name 01",
+        price: "1024.00",
+        stars: 5
+      },
+      {
+        img: "03",
+        name: "Shoe Name 01",
+        price: "1024.00",
+        stars: 5
+      },
+      {
+        img: "04",
+        name: "Shoe Name 01",
+        price: "1024.00",
+        stars: 5
+      },
+      {
+        img: "01",
+        name: "Shoe Name 01",
+        price: "1024.00",
+        stars: 5
+      },
+      {
+        img: "02",
+        name: "Shoe Name 01",
+        price: "1024.00",
+        stars: 5
+      },
+      {
+        img: "03",
+        name: "Shoe Name 01",
+        price: "1024.00",
+        stars: 5
+      }
+    ];
+  }
   render() {
+    var newArrivals = this.newArrivalList.map((data, i) => {
+      return (
+        <NewArrivalItem
+          key={i}
+          img={data.img}
+          name={data.name}
+          price={data.price}
+          stars={data.stars}
+        />
+      );
+    });
     return (
       <div className="home_main">
         <div className="home_imgSlides">
@@ -112,16 +175,25 @@ class Home extends Component {
             </center>
           </div>
         </div>
-      
+
         <div className="home_promotion container">
           <div
-            style={{ backgroundImage : "url('" + Pbanner01 + "')"}}
+            style={{ backgroundImage: "url('" + Pbanner01 + "')" }}
             className="pBanner"
-          >
+          />
+        </div>
 
-          </div>
-
-
+        <div className="home_newArrivals container">
+          <center>
+            <h2>New Arrival Items</h2>
+            <p>
+              Investigationes demonstraverunt lectores legere me lius quod ii
+              legunt saepius claritas est etiam processus dynamicus, qui
+              sequitur mutationem.
+            </p>
+            <hr />
+          </center>
+          {newArrivals}
         </div>
       </div>
     );
